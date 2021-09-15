@@ -1,0 +1,9 @@
+.container{
+    margin: 6rem auto;
+    border:1px solid black;
+    max-width:1000px;
+}
+
+section {
+    text-align: center;
+}

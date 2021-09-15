@@ -1,18 +1,16 @@
 import express from 'express'
 import cors from 'cors'
-import fetch from 'node-fetch';
-
+import fetch from 'node-fetch'
+import dotenv from 'dotenv'
 const app = express();
 
-const PORT = 5000;
-
 // Connecting to DB
-
+dotenv.config();
 
 app.use(
     cors()
 );
-
+const PORT = process.env.PORT;;
 
 app.use(express.json());
 
